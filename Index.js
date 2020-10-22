@@ -1,6 +1,3 @@
-const getSumOfDigits = (n) => n ? (n % 10) + getSumOfDigits(Math.floor(n / 10)) : 0;
-
-console.log(getSumOfDigits(123));
 function getMax(n) {
     const firstDigit = n % 10;
     const remainN = Math.trunc(n / 10);
@@ -55,5 +52,8 @@ function getMinStep(remainNumbers, currentMinNumber, recurDeep) {
     } else {
         return getMinStep(remainN, currentMinNumber, recurDeep + 1);
     }
-
 }
+
+const getSumOfDigits = (n) => n ? (n % 10) + getSumOfDigits(Math.floor(n / 10)) : 0;
+
+
